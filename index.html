@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="alura">a</h1>
+  </header>
+  <div class="container">
+    <main class="main">
+      <div class="inputContainter">
+        <textarea id="input" class="input" type="text" placeholder="ingrese el texto aquí"></textarea>
+        <div>
+          <p class="condicion">! Solo letras minúsculas y sin acentos</p>
+          <div class="encrypBtn">
+            <button class="encrypt" id="encrypt">
+              Encriptar
+            </button>
+            <button class="decrypt" id="decrypt">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="displayTxt">
+        <div>
+          <div class="noText">
+            <h3 class="noTextFound">Ningún mensaje fue encontrado :( </h3>
+            <p>Ingese el texto que desees encriptar o desencriptar</p>
+          </div>
+          <div class="textFound">
+            <div class="showTxt">
+              <p id='encryptedText' class='insertedTxt'></p>
+            </div>
+          </div>
+        </div>
+        <div class="copy-reset-btn">
+          <button id="copy" class="copyTxt">Copiar texto</button>
+          <button id="reset" class="resetTxt">Reset</button>
+          <p id="copiedText"></p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h2>footer</h2>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
