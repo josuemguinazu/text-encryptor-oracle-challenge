@@ -159,7 +159,6 @@ body {
 /* footer */
 
 .footer {
-  /* margin-top: 15vh; */
   width: 100%;
 }
 .icons {
@@ -196,7 +195,8 @@ body {
   }
   .displayTxt {
     margin: 0 auto;
-    width: 92%;
+    height: 50vh;
+    width: 94%;
   }
   .encrypBtn {
     flex-direction: column;
@@ -212,6 +212,9 @@ body {
   #copy,
   #reset {
     width: 22rem;
+  }
+  .footer {
+    margin-top: 12%;
   }
   .icon {
     font-size: 2rem;
@@ -266,5 +269,8 @@ body {
   }
   .icon {
     font-size: 1.75rem;
+  }
+  .footer {
+    margin-top: 0;
   }
 }
