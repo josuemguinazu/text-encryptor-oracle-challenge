@@ -46,6 +46,9 @@ encryptBtn.addEventListener('click', () => {
     alert('Caracteres no válidos. Solo minúsculas y sin acentos :)');
     return (input.value = '');
   }
+  if (input.value === '') {
+    alert('Escribe un texto para que sea encriptado.');
+  }
   encrypt();
 });
 
@@ -69,9 +72,10 @@ const decrypt = () => {
 };
 
 decryptBtn.addEventListener('click', () => {
-  const encryptedText = document.querySelector('#encryptedText');
+  const encryptedText = document.querySelector('#encryptedText').textContent;
+  console.log(encryptedText);
   if (!encryptedText) {
-    alert('No se ha ingresado ningún texto.');
+    alert('No se ha encriptado ningún texto.');
   } else {
     decrypt();
   }
@@ -88,7 +92,7 @@ resetBtn.addEventListener('click', reset);
 
 const copyText = async () => {
   const copiedText = document.querySelector('#copiedText');
-  copiedText.textContent = 'texto copiado correctamente';
+  copiedText.textContent = 'texto copiado correctamente :) ';
   try {
     await navigator.clipboard.writeText(encryptedText.textContent);
     setTimeout(() => {

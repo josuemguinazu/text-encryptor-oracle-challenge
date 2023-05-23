@@ -28,6 +28,7 @@ body {
   grid-template-columns: 2fr 1fr;
   height: 92vh;
   width: 95vw;
+  margin-bottom: 12%;
 }
 .displayTxt {
   text-align: center;
@@ -146,14 +147,84 @@ body {
   display: flex;
   gap: 2%;
 }
+#copiedText {
+  padding: 4%;
+  margin-top: 8%;
+  background-image: linear-gradient(to right, #032652, #4998ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* footer */
 
-@media (max-width: 688px) {
+.footer {
+  /* margin-top: 15vh; */
+  width: 100%;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.icon {
+  font-size: 3rem;
+  color: #032652;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+.icon:hover {
+  transform: scale(1.4);
+  opacity: 1;
+}
+
+/* tablet */
+@media (max-width: 988px) {
   .container {
     width: 95vw;
   }
   .main {
     display: flex;
     flex-direction: column;
+  }
+  .inputContainter {
+    margin-bottom: 6%;
+  }
+  .input {
+    width: 95%;
+    height: 22rem;
+  }
+  .encrypBtn {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  .encrypBtn {
+    flex-direction: row;
+  }
+  .encrypt,
+  .decrypt,
+  #copy,
+  #reset {
+    width: 22rem;
+  }
+  .icon {
+    font-size: 2rem;
+  }
+  .copy-reset-btn {
+    margin: 4%;
+  }
+}
+
+/* movil */
+@media (max-width: 588px) {
+  .container {
+    width: 95vw;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50%;
   }
   .inputContainter {
     margin-bottom: 6%;
@@ -187,5 +258,8 @@ body {
 
   .insertedTxt {
     max-width: 95vw;
+  }
+  .icon {
+    font-size: 1.75rem;
   }
 }
