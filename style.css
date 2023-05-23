@@ -31,6 +31,7 @@ body {
   margin-bottom: 12%;
 }
 .displayTxt {
+  /* margin: 0 auto; */
   text-align: center;
   padding: 8%;
   background: #ffffff;
@@ -192,6 +193,10 @@ body {
   .input {
     width: 95%;
     height: 22rem;
+  }
+  .displayTxt {
+    margin: 0 auto;
+    width: 92%;
   }
   .encrypBtn {
     flex-direction: column;
